@@ -13,6 +13,14 @@ To deploy the solution to AWS Cloud with terraform, export your AWS Credentials 
 
 ![alt text](./asset/figure/architecture.png "Architecture Diagram")
 
+
+### MetaData Modeling
+1. Data Flow
+![alt text](./asset/figure/sample-lineage.jpeg "Data flow")
+
+1. Lineage Data Model in Spark Job
+![alt text](./asset/figure/lineage-data-model.jpeg "Lineage Data Model in Spark Job")
+
   
 ```
 brew install terraform
