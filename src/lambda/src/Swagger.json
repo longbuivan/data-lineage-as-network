@@ -1,0 +1,162 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "data_lineage",
+    "version" : "2022-08-23 04:05:10UTC"
+  },
+  "servers" : [ {
+    "url" : "https://xxxxxxx.execute-api.eu-west-2.amazonaws.com/{basePath}",
+    "variables" : {
+      "basePath" : {
+        "default" : "dev"
+      }
+    }
+  } ],
+  "paths" : {
+    "/dag/{id}" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /dag/{id}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:085882858205:function:dev_mvp_data_lineage_producer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "description" : "Generated path parameter for id",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        }
+      } ]
+    },
+    "/job/{id}" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /job/{id}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:085882858205:function:dev_mvp_data_lineage_producer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "description" : "Generated path parameter for id",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        }
+      } ]
+    },
+    "/jobs" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /jobs"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:085882858205:function:dev_mvp_data_lineage_producer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/status" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /status"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:085882858205:function:dev_mvp_data_lineage_producer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      },
+      "head" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for HEAD /status"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:085882858205:function:DataLineageProducer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/execution-events" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /execution-events"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:085882858205:function:DataLineageProducer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/execution-failure" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /execution-failure"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:085882858205:function:DataLineageProducer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/execution-plans" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /execution-plans"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:eu-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-2:225656930256:function:dev_mvp_data_lineage_producer/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    }
+  },
+  "x-amazon-apigateway-importexport-version" : "1.0"
+}
