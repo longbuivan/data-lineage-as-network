@@ -23,33 +23,16 @@ First, we need to understand joins in Spark
 ### Architecture Design
 
 Diagram shows architect and data model  
- ![alt text](./asset/figure/architecture.drawio.svg)
-<img src="./asset/figure/architecture.drawio.svg">
-
-### Build & Deployment
-
-To deploy the solution to AWS Cloud with terraform, export your AWS Credentials to terraform (AWS Profile or environment variables)
-
-<!-- ![alt text](./asset/figure/architecture.png "Architecture Diagram") -->
-
-### Data Modeling
-
-Data Modeling for Spark Job and Dataset
-
-<!-- ![alt text](./asset/figure/data-modeling.png "Modeling Diagram") -->
-
-<<<<<<< Updated upstream
+![alt text](./asset/figure/architecture.drawio.svg)
 
 ### MetaData Modeling
+
 1. Data Flow
-![alt text](./asset/figure/sample-lineage.jpeg "Data flow")
+   ![alt text](./asset/figure/sample-lineage.jpeg "Data flow")
 
-1. Lineage Data Model in Spark Job
-![alt text](./asset/figure/lineage-data-model.jpeg "Lineage Data Model in Spark Job")
+2. Lineage Data Model in Spark Job
+   ![alt text](./asset/figure/lineage-data-model.jpeg "Lineage Data Model in Spark Job")
 
-  
-=======
->>>>>>> Stashed changes
 ```
 brew install terraform
 git clone https://github.com/aws-samples/data-lineage-for-data-lake-example.git
@@ -95,10 +78,3 @@ aws glue start-job-run --job-name "CuratedToAggregated_employee"
 
 - Refresh the **lineage visual** application
 
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
